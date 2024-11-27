@@ -1,13 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+Docker+Rails6環境のテンプレートです
 
 * Ruby version
 
-2.6.6
+- 2.6.6
 
 * 環境構築手順
 
