@@ -7,18 +7,18 @@ Things you may want to cover:
 
 * Ruby version
 2.6.6
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* 環境構築手順
+1.Docker Desktop on Windows のダウンロード 
+https://docs.docker.com/desktop/setup/install/windows-install/
+2.「Hyper-Vを利用する」にチェックを入れてインストール
+3.Dockerの動作確認
+    Ⅰ.コマンドプロンプトで「docker -v」バージョンが表示されればOK
+    Ⅱ.コマンドプロンプトで「docker-compose -v」バージョンが表示されればOK
+4.このプロジェクトをチェックアウト
+5.Dockerを使って環境整備
+    Ⅰ.docker-compose build
+    Ⅱ.docker-compose up –d
+    Ⅲ.docker-compose run web bundle exec rails db:create
+    Ⅳ.docker-compose run --rm web yarn install  (※必要に応じて)
+    Ⅴ.docker-compose run web bundle exec rails s
+6.http://localhost:3000にアクセスしてページが表示されるか確認する
